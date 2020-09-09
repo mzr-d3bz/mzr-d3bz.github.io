@@ -36,8 +36,8 @@ const run = setInterval(function() {
       document.getElementById("sahur").innerHTML = "Selamat Malam, Kamu";
   }
   //Jika Jam 3
-  else if (jam == 3) {
-     document.getElementById("sahur").innerHTML = "Sahur Woy";
+  else if (jam == 1) {
+     document.getElementById("sahur").innerHTML = "Mau tahajud?";
   }
   //Jika Lebih Dari Jam 1 && Kurang dari jam 18
   else if ( jam >= 1 && jam <= 18 ) {
@@ -77,11 +77,19 @@ const run = setInterval(function() {
       
     </div>
     <div class="col-6 nature">
-      <h3 class="font">Rehat Sejenak. Gimana Lagunya ? Wkwk bagus gatuh</h3>
+      <h3 class="font">Rehat Sejenak. coba putar lagu nya</h3>
       <br>
       <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
       
       <button type="button" class="btn btn-outline-primary putar1" onclick="putarlagu()">Putar Lagu</button>
+
+      
+    </div>
+    
+        <div class="col-6 nature">
+      <h3 class="font">Udah di putar lagu nya? gimana enak ga lagu nya? kalo ga enak juga gapapa deh wkwk</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
 
       
     </div>
@@ -115,14 +123,14 @@ const run = setInterval(function() {
       
     </div>
 <div class="col-6 nature">
-      <h3 class="font">Keren Ga tuh ? Wkwkwkw </h3>
+      <h3 class="font">Gak keren ya? gapapa deh wkwk </h3>
       <br>
       <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
 
       
     </div>
 <div class="col-6 nature">
-      <h3 class="font">Ini hadiah ulang Tahun gua buat lu wkwkw </h3>
+      <h3 class="font">ini bukan apa apa sih, iseng aja buat ginian hehe </h3>
       <br>
       <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
 
@@ -156,14 +164,7 @@ const run = setInterval(function() {
 
       
     </div>
-   <div class="col-6 nature">
-      <h3 class="font">Btw kalau gini doang mah gak asik, jadi gua buat fitur buat bangunin sahur, Cek di sini</h3>
-      <br>
-      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
-      <br>
-      <a href="darwanvn.github.io/sahur.io" class="btn btn-outline-primary putar1">Cek Jadwal Sahur</a>
-      
-    </div>
+
   </div>
 
   <div class="row">
@@ -171,7 +172,6 @@ const run = setInterval(function() {
         <div id="jam">
           <div id="hour">
             <h2 id="jjam" class="font-jam"></h2>
-            <h2 id="sahur" class="font-jam1" style="font-size: 13px; margin-left: 15px;"></h2>
           </div>
         </div>
       </div>
@@ -179,7 +179,7 @@ const run = setInterval(function() {
   <!-- Akhir Dari Percakapan -->
   
     <!-- Lagunya bebas Kalian Ganti, gantinya di sini ya -->
-      <audio src="Menepi - Ngatmombilung Cover by Woro Widowati (lyric).mp3" id="rex"></audio>
+      <audio src="/lagu/Gustixa - lemon tree.mp3" id="rex"></audio>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

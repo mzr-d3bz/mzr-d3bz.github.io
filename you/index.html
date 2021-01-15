@@ -80,7 +80,17 @@ const run = setInterval(function() {
       <h3 class="font">Rehat Sejenak. coba putar lagu nya</h3>
       <br>
       <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
-      
+      <audio id="myAudio">
+  <source src="https://raw.githubusercontent.com/mzr-d3bz/blekhet/master/peradaban.mp3" type="audio/mpeg">
+</audio>
+<button onclick="playAudio(); changeBodyBg();" type="button">Putar Lagu</button>
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+</script> 
       <button type="button" class="btn btn-outline-primary putar1" onclick="putarlagu()">Putar Lagu</button>
 
       
